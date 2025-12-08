@@ -1,15 +1,16 @@
-import { HomeBanner, HomeInfo, CountdownSection, Tickets, Header, Footer } from '@/components'
+import { HomeBanner, HomeInfo, CountdownSection, Tickets, Header, Footer } from '@components'
 
 export default function HomePage() {
-
   return (
-    <main>
+    <>
       <Header />
-      <HomeBanner />
-      <CountdownSection />
-      <HomeInfo />
-      <Tickets />
+      <main>
+        <HomeBanner />
+        <CountdownSection />
+        <HomeInfo />
+        <Tickets />
+      </main>
       <Footer />
-    </main>
+    </>
   );
 }

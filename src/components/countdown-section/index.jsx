@@ -17,7 +17,7 @@ export default function CountdownSection() {
             <div className={`${styles.countdown}`}>
                 <Countdown />
             </div>
-            <Link className={`${styles.link}`} href="/register">{translation('register')}</Link>
+            <Link className={`${styles.link}`} href="/inscricoes">{translation('register')}</Link>
         </div>
     );
 };

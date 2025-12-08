@@ -31,9 +31,9 @@ export default function Header() {
             </div>
             <nav className={`${styles.nav} ${isOpen && styles.open}`}>
                 <Link href="/info">{translation('informations')}</Link>
-                <Link href="/schedule">{translation('previous-events')}</Link>
-                <Link href="/register">{translation('register')}</Link>
-                <Link href="/about">{translation('about')}</Link>
+                <Link href="/eventos">{translation('previous-events')}</Link>
+                <Link href="/inscricoes">{translation('register')}</Link>
+                <Link href="/sobre">{translation('about')}</Link>
                 <a className={`${styles.instagram}`} href='https://www.instagram.com/sgi_oficial/' target='_blank'>
                     <span className={`${styles.instagramIcon}`}></span>
                     <span className={`${styles.instagramLabel}`}>Instagram</span>
