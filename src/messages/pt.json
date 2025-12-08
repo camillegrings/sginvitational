@@ -19,7 +19,20 @@
         "seconds": "SEGUNDOS",
         "register": "Inscreva-se",
         "finish-count": "É Hoje!",
-        "tickets": "Ingressos"
+        "tickets": "Ingressos",
+        "best-event": "MELHOR EVENTO DO ANO!",
+        "buy-now": "Compre agora seu ingresso!",
+        "full-event": "Evento completo - Lotes",
+        "full-event-desc": "Acesso completo a aulas e bailes",
+        "promo": "Promocional",
+        "promo-desc": "Inclui: Fullpass, camiseta, pulseira e copo.",
+        "promo-tickets": "Apenas 5 ingressos disponíveis",
+        "dark-batch": "Lote às Escuras",
+        "dark-desc": "Inclui: Fullpass, pulseira e copo.",
+        "first-batch": "Primeiro Lote",
+        "first-desc": "Inclui: Fullpass, pulseira e copo.",
+        "second-batch": "Segundo Lote",
+        "second-desc": "Inclui: Fullpass, pulseira e copo."
     },
     "Register": {
         "email": "Email para contato",

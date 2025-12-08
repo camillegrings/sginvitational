@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #EF64FE;
+    padding: 20px 10px;
+}
+
+.container p {
+    font-size: 37px;
+    margin-right: 10px;
+}
+
+.link {
+    min-width: 205px;
+    height: 42px;
+    background-color: #FC7C01;
+    border: 3px solid #080808;
+    color: #080808;
+    font-size: 23px;
+    font-family: inherit;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link:hover,
+.link:active {
+    background-color: #ffa956;
+}

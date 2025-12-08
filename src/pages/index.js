@@ -1,4 +1,4 @@
-import { HomeBanner, HomeInfo, CountdownSection, Tickets, Header, Footer } from '@components'
+import { HomeBanner, HomeInfo, CountdownSection, Tickets, Header, Footer, EffectPhrase, SeparatorWithPhrase, Separator } from '@components'
 
 export default function HomePage() {
   return (
@@ -8,7 +8,10 @@ export default function HomePage() {
         <HomeBanner />
         <CountdownSection />
         <HomeInfo />
+        <EffectPhrase />
+        <SeparatorWithPhrase />
         <Tickets />
+        <Separator />
       </main>
       <Footer />
     </>

@@ -19,6 +19,7 @@ export default function HomeBanner() {
             <Image alt='' src={bannerFull} width={811} height={325} className={`${styles.bannerDesktop}`} />
             <Image alt='' src={bannerMobile} width={431} height={300} className={`${styles.bannerMobile}`} />
             <button className={`${styles.scrollDown}`} onClick={scrollToSection} />
+            <span className={`${styles.dividor}`}></span>
         </div>
     );
 }

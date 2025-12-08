@@ -8,5 +8,8 @@ import HomeInfo from './home-info'
 import Countdown from './countdown'
 import CountdownSection from './countdown-section'
 import Tickets from './tickets'
+import EffectPhrase from './effect-phrase'
+import SeparatorWithPhrase from './separator-with-phrase'
+import Separator from './separator'
 
-export { Header, HomeBanner, Footer, HomeInfo, Countdown, CountdownSection, Tickets }
+export { Header, HomeBanner, Footer, HomeInfo, Countdown, CountdownSection, Tickets, EffectPhrase, SeparatorWithPhrase, Separator }
