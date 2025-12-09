@@ -15,9 +15,7 @@ export default function HomeInfo() {
             <div className={`${styles.wrapper}`}>
                 <div className={`${styles.videoWrapper}`}>
                     <Image alt='' src={tape} width={100} height={50} className={`${styles.tape}`} />
-                    <video width="300" height="500" controls autoPlay muted loop>
-                        <source src='https://rnuayxakvuwi2axn.public.blob.vercel-storage.com/SGI_video.mp4' type="video/mp4" />
-                    </video>
+                    <iframe src="https://player.vimeo.com/video/1144697154?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;loop=1" width="300" height="533" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerPolicy="strict-origin-when-cross-origin" title="SGI2025"></iframe>
                     <Image alt='' src={xtape} width={38} height={38} className={`${styles.xtape}`} />
                 </div>
                 <div className={`${styles.content}`}>

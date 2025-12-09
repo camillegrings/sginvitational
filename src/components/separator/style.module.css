@@ -4,6 +4,7 @@
     justify-content: center;
     background-color: #FC7C01;
     padding: 0;
+    flex-direction: column;
 }
 
 .link {
@@ -36,4 +37,16 @@
     height: 40px;
     display: block;
     position: relative;
+}
+
+@media (max-width: 767px) {
+    .dividorBottom {
+        margin-bottom: -25px;
+    }
+}
+
+@media (max-width: 425px) {
+    .link {
+        font-size: 20px;
+    }
 }

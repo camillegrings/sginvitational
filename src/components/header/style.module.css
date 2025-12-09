@@ -19,6 +19,7 @@
 
 .nav a:not(.instagram) {
     padding: 6px 10px;
+    text-wrap: nowrap;
 }
 
 .nav a:hover {
@@ -33,9 +34,6 @@
 }
 
 .instagramIcon {
-    background: url('@assets/instagram.svg') no-repeat;
-    width: 20px;
-    height: 20px;
     display: block;
 }
 

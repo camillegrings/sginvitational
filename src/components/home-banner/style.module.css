@@ -3,7 +3,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* padding-bottom: 50px; */
 }
 
 .logo {
@@ -17,6 +16,7 @@
     height: 65px;
     border: none;
     margin-top: -70px;
+    cursor: pointer;
 }
 
 .bannerMobile {
@@ -54,7 +54,6 @@
     }
 
     .container {
-        padding-bottom: 30px;
         position: initial;
     }
 }

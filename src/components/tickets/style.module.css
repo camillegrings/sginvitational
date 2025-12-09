@@ -26,19 +26,20 @@
     background: url('@assets/underline-purple.svg') no-repeat;
     display: block;
     position: absolute;
-    width: 100%;
+    width: 420px;
+    background-size: contain;
     height: 22px;
     left: -20px;
-    bottom: 9px;
+    bottom: 6px;
 }
 
 .typeSubtitle {
     font-size: 20px;
     font-weight: 200;
-    margin-top: 5px;
+    margin: 2px 0 20px;
 }
 
-.typesContainer {
+.typescontent {
     margin-top: 30px;
 }
 
@@ -114,8 +115,14 @@
     position: relative;
 }
 
+@media (max-width: 996px) {
+    .underline {
+        left: -10px;
+    }
+}
+
 @media (max-width: 767px) {
-    .container {
+    .content {
         padding-right: 5px;
     }
 
@@ -159,6 +166,11 @@
     .priceDesc {
         font-size: 14px;
     }
+
+    .underline {
+        width: 325px;
+        bottom: 0;
+    }
 }
 
 @media (max-width: 320px) {
@@ -181,5 +193,9 @@
 
     .price {
         font-size: 30px;
+    }
+
+    .underline {
+        width: 290px;
     }
 }

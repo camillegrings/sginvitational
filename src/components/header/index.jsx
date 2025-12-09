@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { useTranslations } from '@/i18n';
 import Image from 'next/image'
 import logo from '@assets/logo.png'
+import instagram from '@assets/instagram.svg'
 
 export default function Header() {
     const translation = useTranslations('Header');
@@ -35,7 +36,7 @@ export default function Header() {
                 <Link href="/inscricoes">{translation('register')}</Link>
                 <Link href="/sobre">{translation('about')}</Link>
                 <a className={`${styles.instagram}`} href='https://www.instagram.com/sgi_oficial/' target='_blank'>
-                    <span className={`${styles.instagramIcon}`}></span>
+                    <Image alt='' src={instagram} width={20} height={20} className={`${styles.instagramIcon}`} />
                     <span className={`${styles.instagramLabel}`}>Instagram</span>
                 </a>
             </nav>
