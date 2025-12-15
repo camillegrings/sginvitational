@@ -13,7 +13,7 @@ export default function CountdownSection() {
         <div className={`${styles.container}`} id='countdown'>
             <Image alt='' src={crown} width={69} height={69} className={`${styles.crown}`} />
             <Image alt='' src={music} width={72} height={72} className={`${styles.music}`} />
-            <p className={`${styles.title} ${rascals.className}`}>{translation('still-time')}</p>
+            <p className={`${styles.title} ${rascals.className} gs_reveal`}>{translation('still-time')}</p>
             <div className={`${styles.countdown}`}>
                 <Countdown />
             </div>

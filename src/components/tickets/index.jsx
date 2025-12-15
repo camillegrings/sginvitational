@@ -8,7 +8,7 @@ export default function Tickets() {
         <div className={`${styles.container}`}>
             <span className={`${styles.dividorTop}`}></span>
             <div className={`${styles.content}`}>
-                <h3 className={`${styles.title} ${snowmanGraffiti.className}`}>{translation('tickets')}</h3>
+                <h3 className={`${styles.title} ${snowmanGraffiti.className} gs_reveal`}>{translation('tickets')}</h3>
                 <h4 className={`${styles.typeTitle} ${rascals.className}`}>
                     <span>{translation('full-event')}</span>
                     <span className={`${styles.underline}`}></span>

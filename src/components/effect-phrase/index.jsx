@@ -9,9 +9,9 @@ export default function EffectPhrase() {
     return (
         <div className={`${styles.container} ${rascals.className}`}>
             <Image alt='' src={heart} width={90} height={105} className={`${styles.heart}`} />
-            <h4><span className={`${styles.deco1}`}>SWING</span> DE GAROTOS +</h4>
-            <h4>WEST COAST <span className={`${styles.deco2}`}>SWING</span> =</h4>
-            <h4 className={`${styles.lastLine}`}>
+            <h4 className={`gs_reveal`}><span className={`${styles.deco1}`}>SWING</span> DE GAROTOS +</h4>
+            <h4 className={`gs_reveal`}>WEST COAST <span className={`${styles.deco2}`}>SWING</span> =</h4>
+            <h4 className={`${styles.lastLine} gs_reveal`}>
                 <span>{translation('best-event')}</span>
                 <span className={`${styles.underline}`}></span>
             </h4>
