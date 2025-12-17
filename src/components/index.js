@@ -1,10 +1,10 @@
 import Header from './header'
 import HomeBanner from './home-banner'
-// import RegisterForm from './register-form'
-// import Button from './button'
+import RegisterForm from './register-form'
+import Button from './button'
 import Footer from './footer'
 import HomeInfo from './home-info'
-// import Loader from './loader'
+import Loader from './loader'
 import Countdown from './countdown'
 import CountdownSection from './countdown-section'
 import Tickets from './tickets'
@@ -12,4 +12,4 @@ import EffectPhrase from './effect-phrase'
 import SeparatorWithPhrase from './separator-with-phrase'
 import Separator from './separator'
 
-export { Header, HomeBanner, Footer, HomeInfo, Countdown, CountdownSection, Tickets, EffectPhrase, SeparatorWithPhrase, Separator }
+export { Header, HomeBanner, Footer, HomeInfo, Countdown, CountdownSection, Tickets, EffectPhrase, SeparatorWithPhrase, Separator, Button, Loader, RegisterForm }
