@@ -6,8 +6,9 @@
 }
 
 .logo {
-    margin-bottom: -75px;
+    /* margin-bottom: -75px; */
     z-index: 1;
+
 }
 
 .scrollDown {

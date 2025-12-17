@@ -1,11 +1,28 @@
 import styles from './style.module.css'
 import { useTranslations } from '@/i18n';
 import { snowmanGraffiti, rascals } from '@fonts'
+import { gsap } from "gsap"
+import { useGSAP } from '@gsap/react';
 
 export default function Tickets() {
     const translation = useTranslations('HomePage');
+
+    useGSAP(() => {
+        gsap.from(`.${styles.typesWrapper}`, {
+            x: -40,
+            opacity: 0,
+            stagger: 0.15,
+            scrollTrigger: {
+                trigger: "#tickets",
+                start: "top 75%",
+                end: "top 20%",
+                scrub: true
+            }
+        });
+    });
+
     return (
-        <div className={`${styles.container}`}>
+        <section className={`${styles.container}`} id="tickets">
             <span className={`${styles.dividorTop}`}></span>
             <div className={`${styles.content}`}>
                 <h3 className={`${styles.title} ${snowmanGraffiti.className} gs_reveal`}>{translation('tickets')}</h3>
@@ -67,6 +84,6 @@ export default function Tickets() {
                 </div>
             </div>
             <span className={`${styles.dividorBottom}`}></span>
-        </div>
+        </section>
     );
 }

@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { useTranslations } from '@/i18n';
 import { snowmanGraffiti, rascals } from '@fonts'
 import { gsap } from "gsap";
+import { useGSAP } from '@gsap/react';
 
 import styles from './style.module.css'
 
@@ -53,6 +54,18 @@ export default function Countdown() {
 
         // Clear timeout if the component is unmounted
         return () => clearTimeout(timer);
+    });
+
+    useGSAP(() => {
+        gsap.from(`.${styles.wrapper}`, {
+            y: 40,
+            opacity: 0,
+            stagger: 0.15,
+            scrollTrigger: {
+                trigger: "#countdown",
+                start: "top 75%"
+            }
+        });
     });
 
     const timerComponents = Object.keys(timeLeft).map((interval, index) => {

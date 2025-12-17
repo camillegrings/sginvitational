@@ -28,18 +28,18 @@ export default function HomeInfo() {
                 }
             }
         );
-    }, []);
+    });
 
     return (
-        <div className={`${styles.container}`}>
+        <section className={`${styles.container}`}>
             <span className={`${styles.dividor}`}></span>
             <div className={`${styles.wrapper}`}>
-                <div className={`${styles.videoWrapper} gs_reveal gs_reveal_fromLeft`}>
+                <div className={`${styles.videoWrapper} gs_reveal gs_reveal_fromLeft`} data-speed="1.1">
                     <Image alt='' src={tape} width={100} height={50} className={`${styles.tape}`} />
                     <iframe src="https://player.vimeo.com/video/1144697154?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;loop=1" width="300" height="533" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerPolicy="strict-origin-when-cross-origin" title="SGI2025"></iframe>
                     <Image alt='' src={xtape} width={38} height={38} className={`${styles.xtape}`} />
                 </div>
-                <div className={`${styles.content}`}>
+                <div className={`${styles.content}`} data-speed="0.9">
                     <p className={`${styles.date} ${snowmanGraffiti.className}`}>
                         {translation('date-start')}
                         <span> 24</span>,
@@ -65,6 +65,6 @@ export default function HomeInfo() {
                 </div>
             </div>
             <Image alt='' src={zap} width={60} height={88} className={`${styles.zap}`} />
-        </div>
+        </section>
     );
 }

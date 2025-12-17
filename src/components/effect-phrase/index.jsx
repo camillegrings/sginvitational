@@ -3,11 +3,28 @@ import { useTranslations } from '@/i18n';
 import { rascals } from '@fonts'
 import heart from '@assets/heart.svg'
 import Image from 'next/image'
+import { gsap } from "gsap"
+import { useGSAP } from '@gsap/react';
 
 export default function EffectPhrase() {
     const translation = useTranslations('HomePage');
+
+    useGSAP(() => {
+        gsap.from(`.${styles.container} h4`, {
+            y: 60,
+            opacity: 0,
+            stagger: 0.2,
+            scrollTrigger: {
+                trigger: "#manifesto",
+                start: "top 80%",
+                end: "top 30%",
+                scrub: true
+            }
+        });
+    });
+
     return (
-        <div className={`${styles.container} ${rascals.className}`}>
+        <section className={`${styles.container} ${rascals.className}`} id="manifesto">
             <Image alt='' src={heart} width={90} height={105} className={`${styles.heart}`} />
             <h4 className={`gs_reveal`}><span className={`${styles.deco1}`}>SWING</span> DE GAROTOS +</h4>
             <h4 className={`gs_reveal`}>WEST COAST <span className={`${styles.deco2}`}>SWING</span> =</h4>
@@ -16,6 +33,6 @@ export default function EffectPhrase() {
                 <span className={`${styles.underline}`}></span>
             </h4>
             <span className={`${styles.dividor}`}></span>
-        </div>
+        </section>
     );
 };
