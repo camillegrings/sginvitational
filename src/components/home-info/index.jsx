@@ -16,7 +16,7 @@ export default function HomeInfo() {
             `.${styles.date} span`,
             { color: "#ffffff" },
             {
-                color: "#ef64fe",
+                color: "#d4a2e8",
                 duration: 0.8,
                 stagger: 0.15,
                 ease: "power2.out",
