@@ -3,11 +3,10 @@
 }
 
 .wrapper {
-    padding: 40px;
+    padding: 70px 40px 70px 50px;
     position: relative;
     display: flex;
     align-items: end;
-    padding-left: 50px;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -17,9 +16,10 @@
 }
 
 .date {
-    font-size: 65px;
-    line-height: 60px;
+    font-size: 75px;
+    line-height: 70px;
     margin-bottom: 30px;
+    letter-spacing: 5px;
 }
 
 .date span {
@@ -31,12 +31,13 @@
 }
 
 .place {
-    font-size: 60px;
+    font-size: 70px;
+    letter-spacing: 3px;
     color: #EF64FE
 }
 
 .address {
-    font-size: 30px;
+    font-size: 25px;
     line-height: 30px;
     font-weight: 300;
     text-decoration: underline;
@@ -59,7 +60,7 @@
 }
 
 .instagramLabel {
-    font-size: 25px;
+    font-size: 20px;
     color: #fc7c01;
     font-weight: 300;
     margin-left: 15px;
@@ -67,7 +68,7 @@
 
 .zap {
     position: absolute;
-    bottom: -19px;
+    bottom: 0px;
     right: 29px;
 }
 

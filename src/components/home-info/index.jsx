@@ -2,7 +2,7 @@ import styles from './style.module.css'
 import { useTranslations } from '@/i18n';
 import Image from 'next/image'
 import Link from 'next/link'
-import { snowmanGraffiti } from '@fonts'
+import { rascals, balmy } from '@fonts'
 import zap from '@assets/zap.svg'
 import tape from '@assets/tape.svg'
 import xtape from '@assets/x-tape.svg'
@@ -40,7 +40,7 @@ export default function HomeInfo() {
                     <Image alt='' src={xtape} width={38} height={38} className={`${styles.xtape}`} />
                 </div>
                 <div className={`${styles.content}`}>
-                    <p className={`${styles.date} ${snowmanGraffiti.className}`}>
+                    <p className={`${styles.date} ${rascals.className}`}>
                         {translation('date-start')}
                         <span> 24</span>,
                         <span> 25 </span>
@@ -49,17 +49,17 @@ export default function HomeInfo() {
                         <br />
                         {translation('date-end')}
                     </p>
-                    <p className={`${styles.place} ${snowmanGraffiti.className}`}>DANCE 4ALL</p>
-                    <p className={`${styles.address}`}>
+                    <p className={`${styles.place} ${rascals.className}`}>DANCE 4ALL</p>
+                    <p className={`${styles.address} ${balmy.className}`}>
                         <a href='https://maps.app.goo.gl/mU6vraDsctQSu9bE6' target='_blank'>{translation('address-1')} <br /> {translation('address-2')}</a>
                     </p>
-                    <p className={`${styles.knowMore}`}>
+                    <p className={`${styles.knowMore} ${balmy.className}`}>
                         <Link href="/saiba-mais">{translation('know-more')}</Link>
                     </p>
                     <p>
                         <a className={`${styles.instagram}`} href='https://www.instagram.com/sgi_oficial/' target='_blank'>
                             <span className={`${styles.instagramIcon}`}></span>
-                            <span className={`${styles.instagramLabel}`}>@sgi_oficial</span>
+                            <span className={`${styles.instagramLabel} ${balmy.className}`}>@sgi_oficial</span>
                         </a>
                     </p>
                 </div>

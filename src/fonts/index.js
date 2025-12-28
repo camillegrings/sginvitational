@@ -14,3 +14,8 @@ export const leagueSpartan = localFont({
     src: './LeagueSpartan.ttf',
     display: 'swap',
 })
+
+export const balmy = localFont({
+    src: './BalmyAlpha.ttf',
+    display: 'swap',
+})

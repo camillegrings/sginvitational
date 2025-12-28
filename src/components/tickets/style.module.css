@@ -1,5 +1,5 @@
 .content {
-    padding: 20px;
+    padding: 50px 20px;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -79,9 +79,16 @@
 }
 
 .price {
-    font-size: 45px;
+    font-size: 40px;
     line-height: 33px;
     text-align: center;
+}
+
+.soldout {
+    font-size: 30px;
+    line-height: 33px;
+    text-align: center;
+    color: #ef64fe;
 }
 
 .priceDesc {
