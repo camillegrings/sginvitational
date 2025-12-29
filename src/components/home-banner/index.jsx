@@ -9,7 +9,7 @@ import { useGSAP } from '@gsap/react';
 
 export default function HomeBanner() {
     function scrollToSection() {
-        const el = document.getElementById('countdown')
+        const el = document.getElementById('info')
         if (el) {
             el.scrollIntoView({ behavior: 'smooth' })
         }

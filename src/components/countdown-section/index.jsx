@@ -10,7 +10,7 @@ import music from '@assets/music.svg'
 export default function CountdownSection() {
     const translation = useTranslations('HomePage');
     return (
-        <div className={`${styles.container}`} id='countdown'>
+        <div className={`${styles.container}`}>
             <Image alt='' src={crown} width={69} height={69} className={`${styles.crown}`} />
             <Image alt='' src={music} width={72} height={72} className={`${styles.music}`} />
             <p className={`${styles.title} ${rascals.className} gs_reveal`}>{translation('still-time')}</p>

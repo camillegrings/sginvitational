@@ -7,6 +7,7 @@ import { useTranslations } from '@/i18n';
 import Image from 'next/image'
 import logo from '@assets/logo.png'
 import instagram from '@assets/instagram.svg'
+import arrow from '@assets/arrow-dropdown.svg'
 
 export default function Header() {
     const translation = useTranslations('Header');
@@ -31,7 +32,19 @@ export default function Header() {
                 </Link>
             </div>
             <nav className={`${styles.nav} ${isOpen && styles.open}`}>
-                <Link href="/info">{translation('informations')}</Link>
+                {/* <Link href="/info">{translation('informations')}</Link> */}
+                <div className={`${styles.dropdown}`}>
+                    <span>
+                        {translation('informations')}
+                        <Image alt='' src={arrow} width={10} height={6} className={`${styles.arrowDropdown}`} />
+                    </span>
+                    <ul className={`${styles.dropdownMenu}`}>
+                        <li><Link href="/info">Data e Local</Link></li>
+                        <li><Link href="/info">Tema dos bailes</Link></li>
+                        <li><Link href="/info">Cronograma</Link></li>
+                        <li><Link href="/info">Saiba Mais</Link></li>
+                    </ul>
+                </div>
                 <Link href="/eventos">{translation('previous-events')}</Link>
                 <Link href="/inscricoes">{translation('register')}</Link>
                 <Link href="/sobre">{translation('about')}</Link>

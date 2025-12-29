@@ -31,7 +31,7 @@ export default function HomeInfo() {
     }, []);
 
     return (
-        <div className={`${styles.container}`}>
+        <div className={`${styles.container}`} id='info'>
             <span className={`${styles.dividor}`}></span>
             <div className={`${styles.wrapper}`}>
                 <div className={`${styles.videoWrapper} gs_reveal gs_reveal_fromLeft`}>

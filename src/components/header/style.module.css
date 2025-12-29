@@ -26,6 +26,42 @@
     text-decoration: underline;
 }
 
+.dropdown {
+    position: relative;
+    padding: 6px 10px;
+}
+
+.dropdownMenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #151515;
+    min-width: 150px;
+    display: none;
+    list-style: none;
+    box-shadow: -1px 1px 7px 0px rgba(131, 131, 131, 0.31);
+    border: 1px solid #969696;
+}
+
+.dropdown:hover .dropdownMenu {
+    display: block;
+}
+
+.dropdownMenu li {
+    border-bottom: 1px solid #969696;
+    padding: 5px;
+}
+
+.dropdownMenu li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.arrowDropdown {
+    margin-left: 5px;
+}
+
 .instagram {
     padding: 0;
     display: inline-flex;
@@ -138,5 +174,32 @@
 
     .nav .instagramIcon {
         margin-right: 10px;
+    }
+
+    .dropdown {
+        padding: 0 24px 20px;
+        font-size: 18px;
+    }
+
+    .dropdownMenu {
+        display: block;
+        position: relative;
+        top: 0;
+        border: none;
+        box-shadow: none;
+    }
+
+    .dropdownMenu li {
+        border: none;
+        padding: 15px 10px 0px;
+    }
+
+    .dropdownMenu li a {
+        padding: 0 !important;
+        font-size: 16px;
+    }
+
+    .arrowDropdown {
+        display: none;
     }
 }
