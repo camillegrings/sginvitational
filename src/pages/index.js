@@ -1,4 +1,4 @@
-import { HomeBanner, HomeInfo, CountdownSection, Tickets, Header, Footer, EffectPhrase, SeparatorWithPhrase, Separator } from '@components'
+import { HomeBanner, HomeInfo, CountdownSection, Tickets, Header, Footer, EffectPhrase, SeparatorWithPhrase, Separator, Testimony } from '@components'
 import { gsap } from "gsap";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
@@ -58,6 +58,7 @@ export default function HomePage() {
         <HomeBanner />
         <CountdownSection />
         <HomeInfo />
+        <Testimony />
         <EffectPhrase />
         <SeparatorWithPhrase />
         <Tickets />

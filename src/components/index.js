@@ -11,5 +11,6 @@ import Tickets from './tickets'
 import EffectPhrase from './effect-phrase'
 import SeparatorWithPhrase from './separator-with-phrase'
 import Separator from './separator'
+import Testimony from './testimony'
 
-export { Header, HomeBanner, Footer, HomeInfo, Countdown, CountdownSection, Tickets, EffectPhrase, SeparatorWithPhrase, Separator, Button, Loader, RegisterForm }
+export { Header, HomeBanner, Footer, HomeInfo, Countdown, CountdownSection, Tickets, EffectPhrase, SeparatorWithPhrase, Separator, Button, Loader, RegisterForm, Testimony }
