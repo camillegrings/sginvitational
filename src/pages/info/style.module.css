@@ -59,6 +59,8 @@
 .professorsItemRight {
     display: flex;
     flex-direction: column;
+    max-width: 1000px;
+    width: 100%;
 }
 
 .professorsItemRight {
@@ -90,6 +92,7 @@
 
 .professorsDescRight {
     margin-right: 20px;
+    text-align: right;
 }
 
 .djsWrapper {
@@ -101,6 +104,16 @@
 
 .djsWrapper img {
     margin: 10px;
+}
+
+.professors.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.professors.info .subtitle {
+    align-self: flex-start;
 }
 
 @media (max-width: 767px) {

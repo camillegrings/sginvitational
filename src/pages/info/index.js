@@ -48,8 +48,8 @@ export default function InfoPage() {
                     <p className={`${styles.spacing}`}>EM BREVE!!</p>
                     {/* <iframe className={`${styles.schedule}`} src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSSXqtINBON56tkULnSifMhEED_4vmPfQRz5lsCRTjoo7X2HFWT7DS5A01m3tD56iuJuFJztNXz7bT6/pubhtml?gid=0&amp;single=true&amp;widget=false&amp;headers=false&chrome=false" width="725" height="500" style={{ border: 0 }} ></iframe> */}
                 </section>
-                <section id='professores' className={`${styles.info}`}>
-                    <h3 className={`${styles.subtitle} ${balmy.className}`}>Professores</h3>
+                <section id='professores' className={`${styles.info} ${styles.professors}`}>
+                    <h3 className={`${styles.subtitle} ${balmy.className}  ${styles.professors}`}>Professores</h3>
                     <div className={`${styles.professorsItemLeft}`}>
                         <h4 className={`${styles.professorsSubheading}`}>Cintia Fiaschi</h4>
                         <div className={`${styles.professorsWrapperLeft}`}>

@@ -25,7 +25,7 @@ export default function Tickets() {
                         </div>
                         <div className={`${styles.priceWrapper}`}>
                             <span className={`${styles.soldout} ${balmy.className}`}>ESGOTADO</span>
-                            <span className={`${styles.priceDesc}`}>{translation('promo-tickets')}</span>
+                            {/* <span className={`${styles.priceDesc}`}>{translation('promo-tickets')}</span> */}
                         </div>
                     </div>
                     <div className={`${styles.typesWrapper}`}>

@@ -40,11 +40,9 @@ export default function Header() {
                     <ul className={`${styles.dropdownMenu}`}>
                         <li><Link href="/info#data">Data</Link></li>
                         <li><Link href="/info#local">Local</Link></li>
-                        <li><Link href="/info#local">Tema dos bailes</Link></li>
                         <li><Link href="/info#cronograma">Cronograma</Link></li>
                         <li><Link href="/info#professores">Professores</Link></li>
                         <li><Link href="/info#djs">DJs</Link></li>
-                        <li><Link href="/info">Saiba Mais</Link></li>
                     </ul>
                 </div>
                 <Link href="/eventos">{translation('previous-events')}</Link>
