@@ -15,7 +15,7 @@ export default function RegisterForm() {
     const { register, handleSubmit, formState: { errors } } = useForm()
     const [showSuccessMessage, setShowSuccessMessage] = useState(false)
     const [isLoading, setIsLoading] = useState(false)
-    const PIX_KEY = '00020101021126580014br.gov.bcb.pix013629a01897-c30a-4db3-9027-1a1373e4129e5204000053039865802BR5925Lucas Esteves da Conceica6009SAO PAULO622905251JCNJGQ2V7D1A9Y7EHNETVNF963043224'
+    const PIX_KEY = '00020101021126460014br.gov.bcb.pix0124swingdegarotos@gmail.com5204000053039865802BR5925LUCAS ESTEVES DA CONCEICA6009SAO PAULO622905251KE884CMH6YMJ3TX2DXAR6M1R63043139'
 
     async function onSubmit(data) {
         try {
@@ -66,14 +66,6 @@ export default function RegisterForm() {
     return (
         <form className={`${styles.form}`}>
             <fieldset>
-                <label>{translation('email')}:</label>
-                <input type="text" placeholder={translation('email-placeholder')} {...register("Email", { required: true, pattern: /^\S+@\S+$/i })} aria-invalid={errors.Email ? "true" : "false"} />
-                <p role="alert" className={`${styles.errorMessage}`}>
-                    {errors.Email?.type === 'required' && translation('required-field')}
-                    {errors.Email?.type === 'pattern' && translation('email-valid')}
-                </p>
-            </fieldset>
-            <fieldset>
                 <label>{translation('name')}:</label>
                 <input type="text" placeholder={translation('name-placeholder')} {...register("Name", { required: true, maxLength: 80 })} aria-invalid={errors.Name ? "true" : "false"} />
                 <p role="alert" className={`${styles.errorMessage}`}>
@@ -82,6 +74,15 @@ export default function RegisterForm() {
                 </p>
             </fieldset>
             <fieldset>
+                <label>{translation('email')}:</label>
+                <input type="text" placeholder={translation('email-placeholder')} {...register("Email", { required: true, pattern: /^\S+@\S+$/i })} aria-invalid={errors.Email ? "true" : "false"} />
+                <p role="alert" className={`${styles.errorMessage}`}>
+                    {errors.Email?.type === 'required' && translation('required-field')}
+                    {errors.Email?.type === 'pattern' && translation('email-valid')}
+                </p>
+            </fieldset>
+
+            <fieldset>
                 <label>{translation('phone')}:</label>
                 <input type="tel" placeholder={translation('phone-placeholder')} {...register("Phone", { required: true, minLength: 6, maxLength: 12 })} aria-invalid={errors.Phone ? "true" : "false"} />
                 <p role="alert" className={`${styles.errorMessage}`}>
@@ -89,7 +90,7 @@ export default function RegisterForm() {
                     {(errors.Phone?.type === 'maxLength' || errors.Phone?.type === 'minLength') && translation('phone-valid')}
                 </p>
             </fieldset>
-            <fieldset className={`${styles.radiogroup}`}>
+            {/* <fieldset className={`${styles.radiogroup}`}>
                 <legend className={`${styles.radiolegend}`}>{translation('level-label')}</legend>
                 <p role="alert" className={`${styles.errorMessage}`}>
                     {errors.Level?.type === 'required' && translation('required-field')}
@@ -172,7 +173,7 @@ export default function RegisterForm() {
                     <input {...register("Compete", { required: true })} type="radio" value="3" id="compete-3" />
                     <label htmlFor="compete-3">{translation('compete-option3')}</label>
                 </div>
-            </fieldset>
+            </fieldset> */}
             <div>
                 <legend className={`${styles.paymentlegend}`}>{translation('payment')}:</legend>
                 <div className={`${styles.paymentContent}`}>
@@ -180,7 +181,7 @@ export default function RegisterForm() {
                     <div className={`${styles.paymentInfo}`}>
                         <div>
                             <Button label={translation('copy-pix')} onClick={copyPixToClipboard} type="secondary" />
-                            <p className={`${styles.pixCode}`}>{PIX_KEY}</p>
+                            <p className={`${styles.pixLink}`}>Ou, acesse o link: <a target="_blank" href="https://cobranca.c6pix.com.br/01KE884C2QTZEYPS3AZ09P9WBK">https://cobranca.c6pix.com.br/01KE884C2QTZEYPS3AZ09P9WBK</a></p>
                         </div>
                         <div>
                             <p className={`${styles.emailText}`}>{translation('send-payment-receipt')}</p>

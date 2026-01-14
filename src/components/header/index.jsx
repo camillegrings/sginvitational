@@ -32,16 +32,18 @@ export default function Header() {
                 </Link>
             </div>
             <nav className={`${styles.nav} ${isOpen && styles.open}`}>
-                {/* <Link href="/info">{translation('informations')}</Link> */}
                 <div className={`${styles.dropdown}`}>
                     <span>
                         {translation('informations')}
                         <Image alt='' src={arrow} width={10} height={6} className={`${styles.arrowDropdown}`} />
                     </span>
                     <ul className={`${styles.dropdownMenu}`}>
-                        <li><Link href="/info">Data e Local</Link></li>
-                        <li><Link href="/info">Tema dos bailes</Link></li>
-                        <li><Link href="/info">Cronograma</Link></li>
+                        <li><Link href="/info#data">Data</Link></li>
+                        <li><Link href="/info#local">Local</Link></li>
+                        <li><Link href="/info#local">Tema dos bailes</Link></li>
+                        <li><Link href="/info#cronograma">Cronograma</Link></li>
+                        <li><Link href="/info#professores">Professores</Link></li>
+                        <li><Link href="/info#djs">DJs</Link></li>
                         <li><Link href="/info">Saiba Mais</Link></li>
                     </ul>
                 </div>

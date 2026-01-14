@@ -54,7 +54,7 @@ export default function HomeInfo() {
                         <a href='https://maps.app.goo.gl/mU6vraDsctQSu9bE6' target='_blank'>{translation('address-1')} <br /> {translation('address-2')}</a>
                     </p>
                     <p className={`${styles.knowMore} ${balmy.className}`}>
-                        <Link href="/saiba-mais">{translation('know-more')}</Link>
+                        <Link href="/info">{translation('know-more')}</Link>
                     </p>
                     <p>
                         <a className={`${styles.instagram}`} href='https://www.instagram.com/sgi_oficial/' target='_blank'>

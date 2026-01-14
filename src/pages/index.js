@@ -58,7 +58,7 @@ export default function HomePage() {
         <HomeBanner />
         <CountdownSection />
         <HomeInfo />
-        <Testimony />
+        {/* <Testimony /> */}
         <EffectPhrase />
         <SeparatorWithPhrase />
         <Tickets />

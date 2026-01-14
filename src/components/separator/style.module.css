@@ -43,9 +43,7 @@
     .dividorBottom {
         margin-bottom: -25px;
     }
-}
 
-@media (max-width: 425px) {
     .link {
         font-size: 20px;
     }

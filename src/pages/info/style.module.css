@@ -1,3 +1,162 @@
 .container {
-    padding-left: 20px;
+    padding: 56.5px 20px 20px;
+}
+
+.title {
+    color: #FC7C01;
+    font-size: 50px;
+}
+
+.subtitle {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.info {
+    border-bottom: 1px solid #D4A2E8;
+    padding-bottom: 35px;
+    padding-top: 58px;
+}
+
+.info p {
+    line-height: 18px;
+}
+
+.spacing {
+    margin-bottom: 15px;
+}
+
+.info iframe {
+    margin-bottom: 15px;
+}
+
+.subheading {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.theme {
+    font-weight: 500;
+    color: #D4A2E8;
+    font-size: 18px;
+}
+
+.placeWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.placeWrapper>div:last-child {
+    margin-left: 20px;
+}
+
+.placeWrapper>div {
+    flex: 1
+}
+
+.professorsItemLeft,
+.professorsItemRight {
+    display: flex;
+    flex-direction: column;
+}
+
+.professorsItemRight {
+    align-items: flex-end;
+}
+
+.professorsSubheading {
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: #D4A2E8;
+}
+
+.professorsWrapperLeft,
+.professorsWrapperRight {
+    display: flex;
+    align-items: center;
+}
+
+.professorsDescLeft,
+.professorsDescRight {
+    max-width: 500px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.professorsDescLeft {
+    margin-left: 20px;
+}
+
+.professorsDescRight {
+    margin-right: 20px;
+}
+
+.djsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.djsWrapper img {
+    margin: 10px;
+}
+
+@media (max-width: 767px) {
+
+    .placeWrapper,
+    .djsWrapper {
+        flex-direction: column;
+    }
+
+    .placeWrapper>div:last-child {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .professorsDescLeft,
+    .professorsDescRight {
+        font-size: 16px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+
+    .djsWrapper {
+        align-items: center;
+    }
+
+    .djsCenter {
+        margin: 20px 0px;
+    }
+
+    .professorsItemLeft,
+    .professorsItemRight {
+        margin-bottom: 20px;
+    }
+
+    .professorsWrapperLeft {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .professorsWrapperRight {
+        flex-direction: column-reverse;
+        align-items: end;
+    }
+
+    .professorsDescRight {
+        text-align: end;
+    }
+
+    .djsWrapper img {
+        margin: 10px 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .schedule {
+        width: 100%;
+    }
 }

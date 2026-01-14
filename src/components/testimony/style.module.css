@@ -1,15 +1,16 @@
 .container {
     padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .title {
     font-size: 55px;
-    text-align: center;
 }
 
 .subtitle {
     font-size: 30px;
-    text-align: center;
     color: #d4a2e8;
     margin-bottom: 10px;
 }
@@ -39,19 +40,49 @@
     font-size: 20px;
 }
 
+.link {
+    width: 205px;
+    height: 42px;
+    background-color: #FC7C01;
+    border: 3px solid #080808;
+    color: #080808;
+    font-size: 23px;
+    font-family: inherit;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link:hover,
+.link:active {
+    background-color: #ffa956;
+}
+
 @media (max-width: 767px) {
     .title {
         font-size: 45px;
         padding: 0 5px;
     }
 
+    .container {
+        padding-bottom: 30px;
+    }
+
     .content {
         flex-direction: column;
+        padding-bottom: 20px;
     }
 
     .card {
         width: 100%;
         margin: 10px 0;
         padding: 30px 20px;
+    }
+
+    .link {
+        width: 185px;
+        font-size: 20px;
     }
 }

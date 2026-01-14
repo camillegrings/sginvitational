@@ -5,6 +5,7 @@ import Image from 'next/image'
 import depoGisele from '@assets/depo-gisele.png'
 import depoLeandro from '@assets/depo-leandro.png'
 import depoCibelle from '@assets/depo-cibelle.png'
+import Link from 'next/link'
 
 export default function Testimony() {
     const translation = useTranslations('HomePage');
@@ -32,6 +33,7 @@ export default function Testimony() {
                     <p className={`${styles.cardName} ${balmy.className}`}>Cibelle</p>
                 </div>
             </div>
+            <Link className={`${styles.link}`} href="/eventos">{translation('know-more')}</Link>
         </div>
     );
 };
