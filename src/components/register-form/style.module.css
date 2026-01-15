@@ -101,7 +101,7 @@
 .paymentContent {
     margin-top: 10px;
     display: flex;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .paymentInfo {
@@ -118,6 +118,11 @@
 
 .emailText {
     padding-top: 12px;
+    margin-bottom: 30px;
+}
+
+.emailText a {
+    padding-left: 5px;
 }
 
 .submit {
@@ -158,6 +163,10 @@
 
 .successQRCode>img {
     margin-bottom: 20px;
+}
+
+.pixLabel {
+    margin-bottom: 10px;
 }
 
 .pixLink {

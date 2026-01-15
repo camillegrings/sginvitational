@@ -180,15 +180,13 @@ export default function RegisterForm() {
                     <Image alt='QRCode PIX' src={qrcode} width={160} height={150} />
                     <div className={`${styles.paymentInfo}`}>
                         <div>
+                            <p className={`${styles.pixLabel}`}>Leia o QR Code ou copie o código abaixo para fazer o pagamento:</p>
                             <Button label={translation('copy-pix')} onClick={copyPixToClipboard} type="secondary" />
-                            <p className={`${styles.pixLink}`}>Ou, acesse o link: <a target="_blank" href="https://cobranca.c6pix.com.br/01KE884C2QTZEYPS3AZ09P9WBK">https://cobranca.c6pix.com.br/01KE884C2QTZEYPS3AZ09P9WBK</a></p>
-                        </div>
-                        <div>
-                            <p className={`${styles.emailText}`}>{translation('send-payment-receipt')}</p>
-                            <a className={`${styles.emailLink}`} href="mailto:swingdegarotos@gmail.com">swingdegarotos@gmail.com</a>
+                            <p className={`${styles.pixLink}`}>Ou, se preferir, pode usar a chave pix do nosso grupo: swingdegarotos@gmail.com</p>
                         </div>
                     </div>
                 </div>
+                <p className={`${styles.emailText}`}>{translation('send-payment-receipt')}<a className={`${styles.emailLink}`} href="mailto:swingdegarotos@gmail.com">swingdegarotos@gmail.com</a></p>
                 <p>{translation('form-sent-memo')}{" =)"}</p>
             </div>
             <div className={`${styles.submit}`}>

@@ -10,6 +10,7 @@ import marcel from '@assets/Marcel.png'
 import cintiaDJ from '@assets/CintiaDJ.png'
 import maruDJ from '@assets/MaruDJ.png'
 import nelsonDJ from '@assets/NelsonDJ.png'
+import shirleiDJ from '@assets/Shirlei.png'
 
 export default function InfoPage() {
     return (
@@ -101,9 +102,8 @@ export default function InfoPage() {
                         <Image alt='DJ Nelson West' src={nelsonDJ} width={380} height={450} />
                         <Image alt='DJ Maru' src={maruDJ} width={380} height={450} />
                         <Image alt='DJ Cintia' src={cintiaDJ} width={380} height={450} />
+                        <Image alt='DJ Shirlei' src={shirleiDJ} width={380} height={450} />
                     </div>
-
-
                 </section>
                 {/* <section id='staff' className={`${styles.info}`}>
                     <h3 className={`${styles.subtitle} ${balmy.className}`}>Staff</h3>
