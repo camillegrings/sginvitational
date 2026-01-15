@@ -84,7 +84,7 @@ export default function RegisterForm() {
 
             <fieldset>
                 <label>{translation('phone')}:</label>
-                <input type="tel" placeholder={translation('phone-placeholder')} {...register("Phone", { required: true, minLength: 6, maxLength: 12 })} aria-invalid={errors.Phone ? "true" : "false"} />
+                <input type="text" placeholder={translation('phone-placeholder')} {...register("Phone", { required: true, minLength: 6, maxLength: 20 })} aria-invalid={errors.Phone ? "true" : "false"} />
                 <p role="alert" className={`${styles.errorMessage}`}>
                     {errors.Phone?.type === 'required' && translation('required-field')}
                     {(errors.Phone?.type === 'maxLength' || errors.Phone?.type === 'minLength') && translation('phone-valid')}
