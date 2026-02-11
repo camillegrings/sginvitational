@@ -11,7 +11,7 @@ import styles from './style.module.css'
 import { sendRegisterForm } from '@/api/sendRegisterForm'
 
 export default function RegisterForm() {
-    const translation = useTranslations('Register');
+    const translation = useTranslations('RegisterPage');
     const { register, handleSubmit, formState: { errors } } = useForm()
     const [showSuccessMessage, setShowSuccessMessage] = useState(false)
     const [isLoading, setIsLoading] = useState(false)
@@ -180,9 +180,9 @@ export default function RegisterForm() {
                     <Image alt='QRCode PIX' src={qrcode} width={160} height={150} />
                     <div className={`${styles.paymentInfo}`}>
                         <div>
-                            <p className={`${styles.pixLabel}`}>Leia o QR Code ou copie o código abaixo para fazer o pagamento:</p>
+                            <p className={`${styles.pixLabel}`}>{translation('payment-descrip')}:</p>
                             <Button label={translation('copy-pix')} onClick={copyPixToClipboard} type="secondary" />
-                            <p className={`${styles.pixLink}`}>Ou, se preferir, pode usar a chave pix do nosso grupo: swingdegarotos@gmail.com</p>
+                            <p className={`${styles.pixLink}`}>{translation('payment-alt-email')}</p>
                         </div>
                     </div>
                 </div>

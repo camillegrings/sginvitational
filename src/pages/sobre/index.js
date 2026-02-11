@@ -1,12 +1,15 @@
 import { Header, Footer } from '@components'
 import styles from './style.module.css'
 
+import { useTranslations } from '@/i18n';
+
 export default function AboutPage() {
+    const translation = useTranslations('AboutPage');
     return (
         <>
             <Header />
             <main className={`${styles.container}`}>
-                <h1>Em breve!</h1>
+                <h1>{translation('comming-soon')}</h1>
             </main>
             <Footer />
         </>

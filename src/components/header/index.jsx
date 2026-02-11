@@ -38,10 +38,10 @@ export default function Header() {
                         <Image alt='' src={arrow} width={10} height={6} className={`${styles.arrowDropdown}`} />
                     </span>
                     <ul className={`${styles.dropdownMenu}`}>
-                        <li><Link href="/info#data">Data</Link></li>
-                        <li><Link href="/info#local">Local</Link></li>
-                        <li><Link href="/info#cronograma">Cronograma</Link></li>
-                        <li><Link href="/info#professores">Professores</Link></li>
+                        <li><Link href="/info#data">{translation('info-date')}</Link></li>
+                        <li><Link href="/info#local">{translation('info-place')}</Link></li>
+                        <li><Link href="/info#cronograma">{translation('info-schedule')}</Link></li>
+                        <li><Link href="/info#professores">{translation('info-teachers')}</Link></li>
                         <li><Link href="/info#djs">DJs</Link></li>
                     </ul>
                 </div>

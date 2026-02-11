@@ -3,7 +3,11 @@
         "register": "Inscrições",
         "informations": "Informações",
         "about": "Sobre o SG",
-        "previous-events": "Eventos Anteriores"
+        "previous-events": "Eventos Anteriores",
+        "info-date": "Data",
+        "info-place": "Local",
+        "info-schedule": "Cronograma",
+        "info-teachers": "Professores"
     },
     "HomePage": {
         "date-start": "DIAS",
@@ -32,46 +36,62 @@
         "first-batch": "Primeiro Lote",
         "first-desc": "Inclui: Fullpass, pulseira e copo.",
         "second-batch": "Segundo Lote",
-        "second-desc": "Inclui: Fullpass, pulseira e copo."
+        "second-desc": "Inclui: Fullpass, pulseira e copo.",
+        "soldout": "ESGOTADO",
+        "testimony-title": "DEPOIMENTOS",
+        "testimony-subtitle": "O que dizem sobre o evento?",
+        "testimony-kessi": "Um momento de reencontro, com os amigos, com a dança, com a bagunça gostosa e a galera divertida e querida! Esse evento veio pra complementar e unir tudo de melhor num só lugar 🤍 Parabéns aos organizadores por nos proporcionar essa experiência única e que cada ano só melhora e faz a gente ter mais vontade de participar",
+        "testimony-peixoto": "O Evento foi muito massa! Músicas legais, aulas legais, bailes incríveis, um pessoal super da hora de dançar e socializar! Organização muito bacana... valeu super a pena! ❤️",
+        "testimony-joao": "Você está atrás de um evento com pompa e gala? Procure em outro lugar. O negócio aqui é arriação, é se divertir muito! Seja com muita dança ao som de ótimas músicas (é West, afinal, né? e os DJs mandam muito!!!), como principalmente trocando uma energia com uma galera super animada! As expectativas já foram criadas e moram sozinhas para o próximo.",
+        "testimony-eli": "Aqui fala uma argentina que ficou muito feliz, e teve uma experiência maravilhosa no SGI. Adorei as aulas, a diversão e a gentileza de todos conosco, principalmente por ser nossa primeira vez na comunidade!"
     },
-    "Register": {
+    "RegisterPage": {
         "email": "Email para contato",
         "email-placeholder": "nome@email.com",
         "name": "Nome completo",
         "name-placeholder": "Ana Silva",
         "phone": "Telefone (com DDD)",
         "phone-placeholder": "+55 51 99999-9999",
-        "level-label": "Qual nível de WCS você se auto declara?",
-        "level-option1": "Nível 0 - Nunca viu west na vida",
-        "level-option2": "Nível 1 - Até conhece os 5 passos básicos mas não os executa perfeitamente. Entende conceitos iniciais de frame e conexão.",
-        "level-option3": "Nível 2 - Sabe os 5 passos básicos e faz algumas variações deles. Compreende bem o conceito de conexão, porém ainda peca em elástico e movimentações mais impactantes",
-        "level-option4": "Nível 3 - Constrói passos diferentes, varia na música e cria estruturas novas",
-        "level-option5": "Nível 4 - Domínio total da dança com variações de tempo, criatividade e musicalidade",
         "send": "Enviar",
         "copy-pix": "Copiar chave PIX",
         "required-field": "Campo obrigatório.",
         "email-valid": "Insira um email válido.",
         "name-valid": "Insira um nome válido.",
         "phone-valid": "Insira um telefone válido.",
-        "role-label": "Qual sua função de preferência?",
-        "role-option1": "Líder (leader)",
-        "role-option2": "Seguidor (follower)",
-        "compete-label": "Quer se inscrever para o JnJ All Levels? (Gratuito)",
-        "compete-option1": "Sim - Leader",
-        "compete-option2": "Sim - Follower",
-        "compete-option3": "Não",
-        "tickets-label": "Qual pacote deseja adquirir?",
-        "tickets-option1": "Pacote completo (conforme o valor do lote atual)",
-        "tickets-option2": "Pacote de bailes",
-        "tickets-option3": "Baile avulso (sexta)",
-        "tickets-option4": "Baile avulso (sábado)",
-        "tickets-option5": "Baile avulso (domingo)",
         "payment": "Pagamento",
+        "payment-descrip": "Leia o QR Code ou copie o código abaixo para fazer o pagamento",
+        "payment-alt-email": "Ou, se preferir, pode usar a chave pix do nosso grupo: swingdegarotos@gmail.com",
         "send-payment-receipt": "Após realizar o pagamento, favor, enviar comprovante para:",
         "form-sent-memo": "Não se esqueça de clicar para finalizar o formulário abaixo senão os dados preenchidos não serão gravados",
         "copy-success": "Chave PIX copiada!",
         "copy-error": "Erro ao copiar a chave PIX. Tente novamente.",
         "form-send-success": "Formulário enviado com sucesso!",
-        "form-send-error": "Erro ao enviar formulário. Tente novamente."
+        "form-send-error": "Erro ao enviar formulário. Tente novamente.",
+        "title": "Formulário de Inscrição"
+    },
+    "InfoPage": {
+        "title": "Saiba Mais",
+        "subtitle-date": "Data",
+        "date": "24, 25 e 26 de abril",
+        "subtitle-place": "Local",
+        "subheading-class": "Aulas e",
+        "subheading-dance-1": "Baile Sexta (24) e Domingo (26):",
+        "address-1": "Endereço: DANCE 4ALL - R. Domingos de Morais, 2441, Vila Mariana, São Paulo, Brasil",
+        "subheading-dance-2": "Baile Sábado (25)",
+        "address-2": "Endereço: EM BREVE!!",
+        "subtitle-schedule": "Cronograma",
+        "schedule": "EM BREVE!!",
+        "subtitle-teachers": "Professores",
+        "cintia-desc": "A Cintia é uma das profissionais mais influentes da história do WCS no Brasil. Participou na formação de diversos dançarinos e profissionais e influenciou diretamente a cena com sua presença marcante e charme unânime na dança. Também está diretamente ligada com o desenvolvimento de todos os participantes do grupo SG e, consequentemente, do desenvolvimento do SGI!! <br /> Profissional de nível All-Star já vem para o seu terceiro ano no SGI!!",
+        "guigo-margie-desc": "Uma grande e satisfatória novidade no SGI, Guigo e Margie ministram aulas respectivamente em Los Angeles, Califórnia (e anteriormente Porto Alegre) e Chattanooga no Tennessee.<br />O All-Star Guigo trabalha com uma proposta híbrida de &apos;Flow&lsquo; ou &apos;Swouk&lsquo; que consiste em incluir técnicas de Zouk Brasileiro no WCS ao passo que a Margie, que recentemente alcançou a categoria de Champion =D, trabalha com a técnica clássica, dessa forma a dupla traz para o SGI uma grande adição de conhecimento e técnicas para o desenvolvimento da dança no evento.",
+        "danilo-bruna-desc": "Danilo e Bruna, vindos de lugares completamente diferentes, são a perfeita ilustração do potencial social do WCS. A dupla que já organizou eventos, ministrou aulas para turmas e em eventos e tem grande experiência na vivência competitiva do WCS é referência técnica em São Paulo. Uma lutadora de Kung Fu que se encontrou com um comediante e juntos trazem uma riqueza imensa na visão da dança e na dinâmica de ensino, enriquecendo pelo terceiro ano consecutivo o SGI da melhor forma.",
+        "gui-desc": "Professor Residente e Membro Grupo SG desde 2015, Gui Mello ministra aulas de dança de diversos ritmos na Dance4All na cidade de São Paulo. Com seu sorriso cativante e energia inigualável, o Gui faz qualquer evento de dança ser único, protagonizando momentos de diversão e descontração.",
+        "marcel-desc": "Professor Residente e Membro Fundador do Grupo SG, Marcel é versado em absolutamente qualquer estilo de dança que você consiga imaginar. Professor de dança há mais de uma década e coreógrafo para o Grupo SG, o Marcel é uma das referências técnicas do Grupo. Extremamente elogiado por todos como uma pessoa calorosa e participante em todos os momentos do evento! Procurem ele para dançar!"
+    },
+    "EventosPage": {
+        "comming-soon": "Em breve!"
+    },
+    "AboutPage": {
+        "comming-soon": "Em breve!"
     }
 }
