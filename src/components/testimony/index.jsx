@@ -6,6 +6,7 @@ import depoEli from '@assets/eli.png'
 import depoPeixoto from '@assets/peixoto.png'
 import depoJoao from '@assets/joao.png'
 import depoKessi from '@assets/kessi.png'
+import depoDanilo from '@assets/danilo.png'
 import Link from 'next/link'
 
 export default function Testimony() {
@@ -17,14 +18,12 @@ export default function Testimony() {
             <div className={`${styles.content}`}>
                 <div className={`${styles.card}`}>
                     <div>
-
                         <p className={`${styles.cardName} ${balmy.className}`}>Kessi</p>
                         <Image alt='' src={depoKessi} width={120} height={120} className={`${styles.cardImage}`} />
                     </div>
                     <p>
                         &quot;{translation('testimony-kessi')} 🥰.&quot;
                     </p>
-
                 </div>
                 <div className={`${styles.card}`}>
                     <div>
@@ -34,7 +33,6 @@ export default function Testimony() {
                     <p>
                         &quot;{translation('testimony-peixoto')}&quot;
                     </p>
-
                 </div>
                 <div className={`${styles.card}`}>
                     <div>
@@ -44,7 +42,6 @@ export default function Testimony() {
                     <p>
                         &quot;{translation('testimony-joao')}&quot;
                     </p>
-
                 </div>
                 <div className={`${styles.card}`}>
                     <div>
@@ -54,10 +51,18 @@ export default function Testimony() {
                     <p>
                         &quot;{translation('testimony-eli')}&quot;
                     </p>
-
+                </div>
+                <div className={`${styles.card}`}>
+                    <div>
+                        <p className={`${styles.cardName} ${balmy.className}`}>Danilo</p>
+                        <Image alt='' src={depoDanilo} width={120} height={120} className={`${styles.cardImage}`} />
+                    </div>
+                    <p>
+                        &quot;{translation('testimony-danilo')}&quot;
+                    </p>
                 </div>
             </div>
-            <Link className={`${styles.link}`} href="/eventos">{translation('know-more')}</Link>
+            <Link className={`${styles.link}`} href="/eventos">{translation('know-more-about-events')}</Link>
         </div>
     );
 };

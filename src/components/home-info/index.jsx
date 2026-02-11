@@ -53,15 +53,13 @@ export default function HomeInfo() {
                     <p className={`${styles.address} ${balmy.className}`}>
                         <a href='https://maps.app.goo.gl/mU6vraDsctQSu9bE6' target='_blank'>{translation('address-1')} <br /> {translation('address-2')}</a>
                     </p>
-                    <p className={`${styles.knowMore} ${balmy.className}`}>
-                        <Link href="/info">{translation('know-more')}</Link>
-                    </p>
                     <p>
                         <a className={`${styles.instagram}`} href='https://www.instagram.com/sgi_oficial/' target='_blank'>
                             <span className={`${styles.instagramIcon}`}></span>
                             <span className={`${styles.instagramLabel} ${balmy.className}`}>@sgi_oficial</span>
                         </a>
                     </p>
+                    <Link className={`${styles.knowMore}`} href="/info">{translation('know-more')}</Link>
                 </div>
             </div>
             <Image alt='' src={zap} width={60} height={88} className={`${styles.zap}`} />

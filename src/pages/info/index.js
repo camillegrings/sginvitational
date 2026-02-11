@@ -11,6 +11,7 @@ import cintiaDJ from '@assets/CintiaDJ.png'
 import maruDJ from '@assets/MaruDJ.png'
 import nelsonDJ from '@assets/NelsonDJ.png'
 import shirleiDJ from '@assets/Shirlei.png'
+import karenDJ from '@assets/KarenDJ.png'
 
 import { useTranslations } from '@/i18n';
 
@@ -101,6 +102,7 @@ export default function InfoPage() {
                         <Image alt='DJ Maru' src={maruDJ} width={380} height={450} />
                         <Image alt='DJ Cintia' src={cintiaDJ} width={380} height={450} />
                         <Image alt='DJ Shirlei' src={shirleiDJ} width={380} height={450} />
+                        <Image alt='DJ Karen' src={karenDJ} width={380} height={450} />
                     </div>
                 </section>
                 {/* <section id='staff' className={`${styles.info}`}>

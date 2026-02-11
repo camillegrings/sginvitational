@@ -48,7 +48,7 @@
 .instagram {
     display: inline-flex;
     align-items: center;
-    margin-top: 65px;
+    margin-top: 20px;
 }
 
 .instagramIcon {
@@ -73,11 +73,25 @@
 }
 
 .knowMore {
-    font-size: 25px;
-    text-decoration: underline;
-    font-weight: 200;
-    text-decoration-thickness: 1px;
-    margin-top: 40px;
+    width: 205px;
+    height: 42px;
+    background-color: #FC7C01;
+    border: 3px solid #080808;
+    color: #080808;
+    font-size: 23px;
+    font-family: inherit;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 65px;
+}
+
+.knowMore:hover,
+.knowMore:active {
+    background-color: #ffa956;
 }
 
 .videoWrapper {
@@ -127,9 +141,9 @@
         line-height: 25px;
     }
 
-    .knowMore {
+    /* .knowMore {
         font-size: 25px;
-    }
+    } */
 
     .instagramIcon {
         background-size: 35px;
@@ -172,6 +186,10 @@
         font-size: 20px;
         margin-left: 15px;
     }
+
+    .knowMore {
+        margin-top: 120px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -185,5 +203,18 @@
 
     .wrapper {
         padding: 50px 30px;
+    }
+
+    .knowMore {
+        width: 185px;
+        font-size: 20px;
+        margin-top: 65px;
+    }
+}
+
+@media (max-width: 374px) {
+    .zap {
+        bottom: -13px;
+        right: 12px;
     }
 }
